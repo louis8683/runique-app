@@ -1,8 +1,8 @@
 plugins {
+    alias(libs.plugins.runique.android.application.compose)
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.mapsplatform.secrets.plugin)
-    alias(libs.plugins.runique.android.application)
 }
 
 android {
