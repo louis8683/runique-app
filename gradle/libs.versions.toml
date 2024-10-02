@@ -7,7 +7,7 @@ coreSplashscreen = "1.0.1"
 coilCompose = "2.6.0"
 composeCompiler = "1.5.9"
 desugar_jdk_libs = "2.0.4"
-kotlin = "1.9.0"
+kotlin = "1.9.22"
 coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
@@ -111,23 +111,22 @@ junit-junit = { group = "junit", name = "junit", version.ref = "junitJunit" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 room = { id = "androidx.room", version.ref = "room" }
-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 androidDynamicFeature = { id = "com.android.dynamic-feature", version.ref = "agp" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin"}
 
-runique-android-application = { id = "runique.android.application", version = "unspecified"}
-runique-android-application-compose = { id = "runique.android.application.compose", version = "unspecified"}
-runique-android-library = { id = "runique.android.library", version = "unspecified"}
-runique-android-library-compose = { id = "runique.android.library.compose", version = "unspecified"}
-runique-android-feature-ui = { id = "runique.android.feature.ui", version = "unspecified"}
-runique-android-room = { id = "runique.android.room", version = "unspecified"}
-runique-jvm-library = { id = "runique.jvm.library", version = "unspecified"}
-runique-jvm-ktor = { id = "runique.jvm.ktor", version = "unspecified"}
-
+runique-android-application = { id = "runique.android.application", version = "unspecified" }
+runique-android-application-compose = { id = "runique.android.application.compose", version = "unspecified" }
+runique-android-library = { id = "runique.android.library", version = "unspecified" }
+runique-android-library-compose = { id = "runique.android.library.compose", version = "unspecified" }
+runique-android-feature-ui = { id = "runique.android.feature.ui", version = "unspecified" }
+runique-android-room = { id = "runique.android.room", version = "unspecified" }
+runique-jvm-library = { id = "runique.jvm.library", version = "unspecified" }
+runique-jvm-ktor = { id = "runique.jvm.ktor", version = "unspecified" }
 
 [bundles]
 compose = [
@@ -137,11 +136,11 @@ compose = [
     "androidx-compose-material3",
     "androidx-compose-ui",
     "androidx-compose-ui-graphics",
-    "androidx-compose-ui-tooling-preview"
+    "androidx-compose-ui-tooling-preview",
 ]
 compose-debug = [
     "androidx-compose-ui-tooling",
-    "androidx-compose-ui-test-manifest"
+    "androidx-compose-ui-test-manifest",
 ]
 koin = ["koin-core", "koin-android", "koin-android-workmanager"]
 koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]

@@ -9,6 +9,7 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.kotlin
 
 class AndroidLibraryConventionPlugin: Plugin<Project> {
+
     override fun apply(target: Project) {
         target.run {
             pluginManager.run {

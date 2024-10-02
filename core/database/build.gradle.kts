@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.runique.android.room)
 }
 
-
 android {
     namespace = "com.louislu.core.database"
 }
